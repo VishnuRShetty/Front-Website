@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <title>
+            THE FORM TO BE FILLED
+        </title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f7fc;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+        
+            h1 {
+                color: #333;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        
+            .form-container {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                max-width: 600px;
+            }
+        
+            .form-container div {
+                margin-bottom: 15px;
+            }
+        
+            label {
+                font-weight: bold;
+                display: block;
+                margin-bottom: 5px;
+                color: #555;
+            }
+        
+            input, select, textarea, button {
+                width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                font-size: 16px;
+            }
+        
+            input[type="radio"], input[type="checkbox"] {
+                width: auto;
+                display: inline-block;
+            }
+        
+            textarea {
+                resize: vertical;
+                height: 100px;
+            }
+        
+            button {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+                border-radius: 4px;
+                padding: 12px;
+                transition: background-color 0.3s ease;
+            }
+        
+            button:hover {
+                background-color: #45a049;
+            }
+        
+            .subscription-label {
+                display: inline-block;
+                margin-right: 15px;
+            }
+        
+            .terms {
+                display: flex;
+                align-items: center;
+            }
+        
+            .terms label {
+                margin-left: 5px;
+                font-size: 14px;
+            }
+        
+            .form-container p {
+                margin-bottom: 10px;
+            }
+        
+            /* Small screen adjustment */
+            @media (max-width: 600px) {
+                .form-container {
+                    padding: 15px;
+                }
+        
+                button {
+                    padding: 10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <form action="/action.php">
+            <div>
+            <label for="name">Name</label>
+            <input id="name" type ="text" placeholder="Name Here" required>
+        </div>
+    <div>
+        <label for="phone">ph</label>
+        <input id="phone" type="tel" placeholder="Phone Number Here" required>
+
+    </div>
+    
+    <div>
+        <label for="email">Email</label>
+        <input for="email" type="email" placeholder="Email Here" required>
+    </div>
+    <div>
+        <label for="date">Date</label>
+        <input id="date" type="date" required="true">
+    </div>
+<div>
+    <label for="Gender">Gender</label>
+    <select id="gender" required>
+    <option value="gender" disabled selected>Gender</option>
+    <option value="male">Male</option>
+    <option value ="female">Female</option>
+    <OPTION value="other">Others</OPTION>
+</select>
+</div>  
+<div>
+    <input id="vip" type ="radio" name="subscribe" value="vip" >
+    <label for="vip">Vip</label>
+    <input id="eco" type="radio" name="subscribe" value="vip">
+    <label for="eco">eco</label>
+    
+   
+</div> 
+<div>
+    <label for="comment">Comment</label>
+    <textarea id="comment" placeholder="Enter Your Comment Here" rows="2"></textarea>
+</div> 
+<div>
+<button type="submit">submit</button>
+</div>
+</form>
+    </body>
+</html>
+
+
+
